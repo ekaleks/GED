@@ -1,4 +1,4 @@
-@color-green_light: #64c741;
+@color-green_light: #62c741;
 @color-blue:#0072be;
 @color-blue_lite:#5ebcfb;
 @color-white:#ffffff;
@@ -10,19 +10,22 @@
 @color-grey_light:#ebebed;
 @color-grey_menu:#b9b9c3;
 @color-corall:#ff5f47;
+
 body{
 padding:0;
 margin:0;
 font-family:"MyriadPro", "Arial", serif;
-font-size:14px;
 }
 
 .advanced-menu{
 background:@color-black;
 a{
+font-size:8px;
 text-decoration:none;
 color:@color-white;
 }
+a:nth-child(1){
+font-weight:bold;}
 .location-menu{
 display:inline-block;
 vertical-align:top;
@@ -32,11 +35,17 @@ display:inline-block;
 vertical-align:top;
 }
 }
-
+.logo{
+display:inline-block;
+vertical-align:middle;}
 .main-menu{
 background:@color-grey;
-a{text-decoration:none;
+a{
+display:inline-block;
+vertical-align:middle;
+text-decoration:none;
 color:@color-white;
+font-size:12px;
 }
 }
 .breadcrumbs{
@@ -47,7 +56,48 @@ font-size:16px;
 font-weight:bold;
 }
 }
-
+.date-action{
+   font-size:10px;
+   font-weight:bold;   
+   display:inline-block;
+   vertical-align: top;
+   margin-left:20px;
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-left:10px;
+   padding-right:10px;
+   border-radius:2px;
+   background:@color-corall;
+   color:@color-white;
+}
+.stock{
+margin-left:26px;}
+.stock__tel{
+background:@color-green_light;
+color:@color-white;
+font-size:12px;
+padding-top:13px;
+padding-bottom:13px;
+padding-left:19px;
+padding-right:19px;
+border-radius:2px;
+margin-left:13px;
+font-weight:bold;}
+.add-stock{
+margin-left:26px;
+}
+.add-stock_item{
+position:relative;}
+.date-action_absolute{
+position:absolute;
+top:8px;
+left:163px;
+}
+.other-stock{
+p{
+margin-left:26px;
+}
+}
 .other-stock_item{
 	display:inline-block;
 	vertical-align:top;
@@ -55,7 +105,7 @@ font-weight:bold;
 	margin-top:25px;
 	width:31%;
 	background:@color-white;
-	height:380px;
+	height:362px;
 	text-decoration:none;
 	color:@color-black;
 	box-shadow:inset 0 0 0 2px @color-grey_border;
@@ -65,25 +115,16 @@ box-shadow:0 0 5px 2px @color-grey_border;}
 .other-stock_item {
 img{
 	width:100%;
-    height:200px;	
+    height:190px;	
 }
 p{
+font-size:10px;
+font-weight:normal;  
 margin-top:20px;
 margin-left:20px;
 margin-right:20px;
 }
-span{
-   display:inline-block;
-   vertical-align: top;
-   margin-left:20px;
-   padding-top:5px;
-   padding-bottom:5px;
-   padding-left:10px;
-   padding-right:10px;
-   border-radius:5px;
-   background:@color-corall;
-   color:@color-white;
-}
+
 }
 .content{
 	min-width:740px;
